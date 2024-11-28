@@ -1,6 +1,5 @@
 services:
   nginx:
-    container_name: nginx
     image: nginx:1.19.10-alpine
     ports:
       - 9000:80

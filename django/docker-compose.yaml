@@ -6,7 +6,6 @@ include:
 services:
 
   django:
-    container_name: django
     build: .
     ports:
       - 8000:8000
@@ -22,7 +21,6 @@ services:
       - host.docker.internal:host-gateway
     
   change_media_permission:
-    container_name: change_media_permission
     build: .
     user: root
     command: chown -R 1000:1000 /media/uploads
